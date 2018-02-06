@@ -49,7 +49,7 @@
 
     "market_color_by_value": {
 	"yellow" : [50, 45, 40],
-	"brown"  : [10, 20, 30]
+	"orange"  : [10, 20, 30]
     },
 
     "market_color_by_position": {
