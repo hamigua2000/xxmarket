@@ -1,0 +1,105 @@
+{
+    "_comment_": "*****************",
+    "_comment_": "GLOBAL PARAMETERS",
+    "_comment_": "*****************",
+    "_comment_": "278wx216h is letter landscape",
+    "_comment_": "297wx210h is A4 landscape",
+    "canvas_width_mm" : 278,
+    "canvas_height_mm" : 216,
+    "canvas_margin_mm" : 5,
+    "market_max_cell_width_mm": 17,
+    "market_max_cell_height_mm": 23,
+    
+    "font": "Helvetica-Bold",
+
+    "_comment_": "8-bit RGB values",
+    "colors" : {
+	"white": [255, 255, 255],
+	"green": [0, 255, 0],
+	"yellow": [255, 255, 180],
+	"red": [255, 0, 0],
+	"pink": [255, 220, 220],
+	"orange": [255, 200, 0],
+	"brown": [220, 145, 20]
+    },
+
+    "_comment_": "Left side horizontal and top side vertical space between objects",
+    "_comment_": "Objects are the Market, Bank Pool, Par Chart, and Round Tracker",
+    "object_x_sep_mm": 12,
+    "object_y_sep_mm": 4,
+
+    "_comment_": "******",
+    "_comment_": "MARKET",
+    "_comment_": "******",
+    "market_cell_fontsize_pt": 12,
+    "_comment_": "A value of 0 will skip the printing of the cell.",
+    "market_values" : [
+	[60,67,71,76,82,90,100,112,126,142,160,180,200,225,250,275,300,325,350],
+	[53,60,66,70,76,82,90,100,112,126,142,160,180,200,220,240,260,280,300],
+	[46,55,60,65,70,76,82,90,100,111,125,140,155,170,185,200],
+	[39,48,54,60,66,71,76,82,90,100,110,120,130],
+	[32,41,48,55,62,67,71,76,82,90,100],
+	[25,34,42,50,58,65,67,71,75,80],
+	[18,27,36,45,54,63,67,69,70],
+	[10,20,30,40,50,60,67,68],
+	[0,10,20,30,40,50,60],
+	[0,0,10,20,30,40,50],
+	[0,0,0,10,20,30,40]
+    ],
+
+    "market_color_by_value": {
+	"yellow" : [46, 48, 50, 53, 54, 55, 58, 60],
+	"orange" : [32, 34, 36, 39, 40, 41, 42, 45, 46],
+	"brown"  : [10, 18, 20, 25, 27, 30]
+    },
+
+    "market_color_by_position": {
+	"_comment_": "par positions in the market",
+	"pink" : [[0, 6], [1, 6], [2, 6], [3, 6], [4, 6], [5, 6]]
+    },
+
+    "_comment_": "*********",
+    "_comment_": "BANK POOL",
+    "_comment_": "*********",
+    "_comment_": "63mm x 42mm is mini-playing card size",
+    "_comment_": "The default height of the Bank Pool is the max that fits under the Market",
+    "bank_pool_width_mm": 70,
+    "bank_pool_fontsize_pt": 20,
+
+    "_comment_": "*********",
+    "_comment_": "PAR CHART",
+    "_comment_": "*********",
+    "_comment_": "The height of a par chart cell is set to the height of a market cell",
+    "par_chart_label_fontsize_pt": 16,
+    "par_chart": [{"value": 67,  "width_mm": 40, "color": "pink"},
+                  {"value": 71,  "width_mm": 36, "color": "pink"},
+                  {"value": 76,  "width_mm": 32, "color": "pink"},
+                  {"value": 82,  "width_mm": 32, "color": "pink"},
+                  {"value": 90,  "width_mm": 28, "color": "pink"},
+                  {"value": 100, "width_mm": 24, "color": "pink"}],
+    
+    "_comment_": "*************",
+    "_comment_": "ROUND TRACKER",
+    "_comment_": "*************",
+    "_comment_": "Space between cells of the Round Tracker",
+    "round_tracker_sep_mm": 3,
+    "_comment_": "Orientation is either vertical or horizontal.",
+    "_comment_": "Horizontal is wonky when the canvas is narrow.",
+    "round_tracker_orientation": "vertical",
+    "round_tracker_fontsize_pt": 16,
+
+    "_comment_": "***************",
+    "_comment_": "REVENUE TRACKER",
+    "_comment_": "***************",
+    "_comment_": "For 'hundreds' spaces, choose nrows*ncols >= 100",
+    "revenue_tracker_nrows":  5,
+    "revenue_tracker_ncols": 18,
+    "revenue_tracker_max_cell_width_mm": 22,
+    "revenue_tracker_canvas_ratio": 0.50,
+    "revenue_tracker_default_color": "white",
+    "revenue_tracker_5s_color": "pink",
+    "revenue_tracker_10s_color": "red",
+    "revenue_tracker_100s_color": "green",
+    "revenue_tracker_cell_fontsize_pt": 12,
+    "revenue_tracker_label_fontsize_pt":20
+}
