@@ -48,8 +48,8 @@ Size of revenue_tracker_cell : 14.9mm x 19.6mm
 ```
 
 and a two page output file `1889.ps`. Here is the output, converted to
-PDF:
+PNG:
 
-![1889 Stock Market and others](images/1889-0.png?raw=true "Title")
+![1889 Stock Market and others](images/1889-0.png?raw=true "Market+")
 
-![Revenue Tracker](images/1889-1.png?raw=true "Title")
+![Revenue Tracker](images/1889-1.png?raw=true "RevTracker")
