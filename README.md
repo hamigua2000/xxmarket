@@ -3,11 +3,14 @@ Generate stock markets for 18xx games.
 
 ## What is it?
 
-`xxmarket.py` is a Python3 program that, given a data file in JSON
+`xxmarket.py` is a Python3 program that, given an in file in JSON
 format, creates a Postscript file containing both useful and essential
-charts for playing 18XX railroad games. These charts include a
-2-dimensional stock market, an area for stocks owned by the bank, a
-chart of par values, a round tracker, and a revenue tracker.
+charts for playing an 18XX railroad game. These charts include a
+2-dimensional stock market (Market), an area for stocks owned by the
+bank (Bank Pool), a chart of par values (Par Chart), an area to
+indicate the type of the current round (Round Tracker), and an area to
+keep track of each company's current earnings per share (Revenue
+Tracker).
 
 ## Philosophy
 
@@ -21,27 +24,42 @@ The intended workflow is
 1. Futz with JSON input file.
 2. Run `xxmarket.py` and generate output.
 3. Decide whether the output is suitable for your purposes. If it is,
-then you are done; if it is not, go to step 1.
+then you are done; if it is not, then go to step 1.
 
 The JSON file is meant to be self-documenting. There are comments in
 these files in the form of key/value pairs of the form
 ```
 "_comment_": "Comment text",
 ```
-This is a hack, as JSON does not support comments.
+(This is a hack, as JSON does not support comments.)
 
 
 
 ## System prerequisites.
 
-Python3. A document viewer that supports Postscript (e.g., `evince`).
-A Postscript to PDF converter (e.g., `ps2pdf`) if you want to convert
-your output to PDF. There is nascent pseudo-support for tiling output
-if you have access to the Linux `poster` program. 
+   `xxmarket.py` is developed and has full support on the GNU-Linux
+platform. If you have Python3 running on another platform, it might
+should work fine, but no guarantees.
 
-Actually, the script could be fairly easily modified to support
+### Required
+
+Python3.
+
+(Actually, the script could be fairly easily modified to support
 Python2, and while I've already drunk the Python3 Kool-Aid, you are
-certainly free to modify it and go that route if you want.
+certainly free to modify it and go that route if you want.)
+
+### Optional
+
+- A document viewer that supports Postscript (e.g., `evince`).
+
+- If you want to convert your output to PDF, you'll need a Postscript
+to PDF converter (e.g., `ps2pdf`, which is standard on most Linux
+distributions).
+
+- If you have access to the Linux `poster` program, there is nascent
+pseudo-support for tiling output.
+
 
 ## How do I use it?
 
