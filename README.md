@@ -64,7 +64,7 @@ distributions).
 pseudo-support for tiling output.
 
 
-## How do I use it?
+## How do I use it? What does the output look like?
 
 The basic idea is to create an appropriate JSON file describing the
 parameters of your market, and then to call `xxmarket.py` (note: be
