@@ -3,23 +3,26 @@ Generate stock markets for 18xx games.
 
 ## What is it?
 
-`xxmarket.py` is a Python3 program that, given an in file in JSON
-format, creates a Postscript file containing both useful and essential
-charts for playing an 18XX railroad game. These charts include a
-2-dimensional stock market (Market), an area for stocks owned by the
-bank (Bank Pool), a chart of par values (Par Chart), an area to
-indicate the type of the current round (Round Tracker), and an area to
-keep track of each company's current earnings per share (Revenue
-Tracker).
+`xxmarket.py` is a Python3 command-line program that, given an in file
+in JSON format, creates a Postscript file containing both useful and
+essential charts for playing an 18XX railroad game. These charts
+include a 2-dimensional stock market (Market), an area for stocks
+owned by the bank (Bank Pool), a chart of par values (Par Chart), an
+area to indicate the type of the current round (Round Tracker), and an
+area to keep track of each company's current earnings per share
+(Revenue Tracker).
 
 ## Philosophy
 
-ALL configuration data for the output is contained in the JSON input
-file. If you want to change the paper size or orientation, the colors
-of anything, the sizes of the cells, the fonts, etc., etc., etc., it's
-all in the JSON file.
+`xxmarket` is meant to be a non-interactive tool that is driven by
+plain text data. There is no graphical user interface to learn, no
+repetitive mousing, no WYSIWYG. To this end, *ALL* configuration data
+for the output is contained in the JSON input file. If you want to
+change the paper size or orientation, the colors of anything, the
+sizes of the cells, the fonts, etc., etc., etc., then you can do so by
+editing the JSON input file.
 
-The intended workflow is
+The intended work-flow is
 
 1. Futz with JSON input file.
 2. Run `xxmarket.py` and generate output.
@@ -92,7 +95,8 @@ Size of revenue_tracker_cell : 14.9mm x 19.6mm
 ```
 
 and a two page output file `1889.ps`. Here is the output, converted to
-PNG:
+PNG (with the `convert` command line tool, which is part of
+ImageMagick):
 
 ![1889 Stock Market and others](images/1889-0.png?raw=true "Market+")
 
@@ -127,10 +131,10 @@ aesthetics, both in the output and in the code itself. Nonetheless, at
 this point it does what I want it to do, and I have the hubris to
 believe that one or two other people might find it useful.
 
-I welcome any suggestions; I may or may not implement them.
-Suggestions with merge patches will have a significantly higher
-probability of being implemented at a significantly earlier point in
-time.
+I welcome any suggestions; low-hanging fruit has a higher probability
+of being implemented. Suggestions with merge patches have a higher
+probability of being implemented. Requests for ponies will be ignored.
+
 
 ## The input file format (and grandiose plans)
 
