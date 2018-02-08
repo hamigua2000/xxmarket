@@ -129,7 +129,8 @@ cannot fit the elements onto the canvas (in which case you might want
 to futz with the canvas size). Little to no effort was expended for
 aesthetics, both in the output and in the code itself. Nonetheless, at
 this point it does what I want it to do, and I have the hubris to
-believe that one or two other people might find it useful.
+believe that one or two other people might find it interesting, if not
+useful.
 
 I welcome any suggestions; low-hanging fruit has a higher probability
 of being implemented. Suggestions with merge patches have a higher
